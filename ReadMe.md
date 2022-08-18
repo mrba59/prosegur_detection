@@ -55,7 +55,6 @@ The architecture of the project
 ```
   prosegur
 	├── 100_coco
-	├── Peoplewalking.mp4
 	├── config
 	├── logs
 	├── weights
@@ -76,7 +75,7 @@ The architecture of the project
 	├── pipeline_filter.py
 	├── detection.py
 	├── utils
-	└── ReadMe.txt
+	└── ReadMe.md
 ```		
 
 ## 3. Get started
