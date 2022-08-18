@@ -69,9 +69,9 @@ The architecture of the project
 	|    │   ├── images
 	|    │   └── videos
 	|    └── swin
-	|	├── annotations
-	|	├── images
-	|	  └── videos
+	|	 ├── annotations
+	|	 ├── images
+	|	 └── videos
 	├── pipeline_detect_and_filter.py
 	├── pipeline_filter.py
 	├── detection.py
