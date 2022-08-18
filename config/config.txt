@@ -1,0 +1,50 @@
+pedestron:
+100_coco/
+models/Pedestron/configs/elephant/cityperson/cascade_hrnet.py
+--checkpoint
+weights/epoch_5.pth.stu
+output/
+pedestron
+0.2
+
+
+
+dectectron:
+100_coco/images/
+models/detectron2/configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml
+output/
+detectron2
+0.2
+--opts MODEL.WEIGHTS weights/model_final_f10217.pkl
+
+
+swin:
+
+100_coco/images/
+models/Swin/configs/swin/mask_rcnn_swin_tiny_patch4_window7_mstrain_480-800_adamw_1x_coco.py
+--checkpoint
+weights/mask_rcnn_swin_tiny_patch4_window7_1x.pth
+output/
+swin
+0.2
+--video
+Peoplewalking.mp4
+--output_video
+True
+
+pipeline:
+0.7
+--class_filter
+dog
+cat
+person
+
+
+
+tel: 01 40 38 68 68
+
+conda update -n base -c defaults conda
+
+pip install mmcv-full==1.3.17 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.10.0/index.html
+
+
