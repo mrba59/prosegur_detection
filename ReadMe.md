@@ -48,7 +48,7 @@ cd models
 git clone https://github.com/facebookresearch/detectron2
 git clone https://github.com/microsoft/Swin-Transformer
 ```
- 
+
 ## 2. Structure
 
 The architecture of the project
@@ -69,9 +69,9 @@ The architecture of the project
 	|    │   ├── images
 	|    │   └── videos
 	|    └── swin
-	|		├── annotations
-	|		├── images
-	|	    └── videos
+	|	├── annotations
+	|	├── images
+	|	  └── videos
 	├── pipeline_detect_and_filter.py
 	├── pipeline_filter.py
 	├── detection.py
